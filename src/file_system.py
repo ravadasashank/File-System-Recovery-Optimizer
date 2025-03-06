@@ -53,3 +53,19 @@ class FreeSpaceManager:
 fsm = FreeSpaceManager(10)
 fsm.allocate_block()
 fsm.free_block(0)
+
+class File:
+    def __init__(self, name, size):
+        self.name = name
+        self.size = size
+        self.blocks = []
+
+class Directory:
+    def __init__(self):
+        self.files = {}
+
+    def create_file(self, name, size):
+        self.files[name] = File(name, size)
+
+fs = Directory()
+fs.create_file("document.txt", 10)
