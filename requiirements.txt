@@ -1,0 +1,5 @@
+tkinter  # GUI library (built-in, but some systems may require installation)
+
+tkinter
+logging  # For system logging
+sqlite3  # If you want to store recovery logs persistently
