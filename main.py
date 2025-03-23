@@ -1,6 +1,6 @@
-from file_system import FileSystem, FreeSpaceManager, Directory
-from optimization import LRUCache, visualize_disk_usage
-from recovery import Journal, DiskCrashSimulator
+from src.file_system import FileSystem, FreeSpaceManager, Directory
+from src.optimization import LRUCache, visualize_disk_usage
+from src.recovery import Journal, DiskCrashSimulator
 
 def main():
     print("Welcome to the File System Recovery and Optimization Tool")
